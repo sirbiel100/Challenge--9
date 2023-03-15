@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+html {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  max-width: 1440px;
+  height: 100vh;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: repeat-x;
+  background-size: 75%;
+  background-color: hsl(225, 100%, 94%);
+  display: grid;
+  place-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  width: 25rem;
+  height: auto;
+  border-radius: 20px;
+}
+.main .illustration {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.main .text {
+  padding: 2rem;
+  color: hsl(223, 47%, 23%);
+}
+.main .text p {
+  color: hsl(224, 23%, 55%);
+  margin-top: 0.7rem;
+}
+.main .plan {
+  display: flex;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  width: 80%;
+  padding: 0.8rem;
+  border-radius: 10px;
+}
+.main .plan img {
+  margin-right: 1rem;
+}
+.main .plan p {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: hsl(223, 47%, 23%);
+  font-weight: 800;
+}
+.main .plan p span {
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+  margin-top: 0.15rem;
+}
+.main .plan a {
+  position: relative;
+  left: 5rem;
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  font-weight: 600;
+}
+.main .plan a:hover {
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+  color: hsla(245, 75%, 52%, 0.8);
+}
+.main button {
+  border: none;
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  width: 80%;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  border-radius: 15px;
+  box-shadow: 0px 15px 25px 5px hsla(245, 75%, 52%, 0.3);
+  cursor: pointer;
+}
+.main button:hover {
+  transition: background-color 0.3s ease-in-out;
+  background-color: hsla(245, 75%, 52%, 0.8);
+}
+.main button:active {
+  translate: 0px 5px;
+}
+.main .cancel {
+  margin: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: hsl(224, 23%, 55%);
+}
+.main .cancel:hover {
+  transition: color 0.3s ease-in-out;
+  color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 750px) {
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,141 @@
+@import './var.scss';
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+//Reset CSS
+
+html {
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+* {
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+}
+
+//Styling 
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    max-width: 1440px;
+    height: 100vh;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-repeat: repeat-x;
+    background-size: 75%;
+    background-color: $PaleBlue;
+    display: grid;
+    place-items: center;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    width: 25rem;
+    height: auto;
+    border-radius: 20px;
+     
+    .illustration {
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    .text {
+        padding: 2rem;
+        color: $DarkBlue;
+        p {
+            color: $DesaturatedBlue;
+            margin-top: .7rem;
+        }
+    }
+
+    .plan {
+        display: flex;
+        align-items: center;
+        background-color: $VeryPaleBlue;
+        width: 80%;
+        padding: .8rem;
+        border-radius: 10px;
+        img {
+            margin-right: 1rem;
+        }
+        p {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            color: $DarkBlue;
+            font-weight: 800;
+            span {
+                font-weight: 500;
+                color: $DesaturatedBlue;
+                margin-top: .15rem;
+            }
+        }
+        a{ 
+            position: relative;
+            left: 5rem;
+            color: $BrightBlue;
+            text-decoration: underline;
+            font-weight: 600;
+
+            &:hover {
+                transition: color .3s ease-in-out;
+                text-decoration: none;
+                color: hsla(245, 75%, 52%, 0.8);
+            }
+        }
+    }
+
+    button {
+        border: none;
+        background-color: $BrightBlue;
+        color: white;
+        width: 80%;
+        padding: 1rem;
+        margin-top: 1rem;
+        font-weight: 600;
+        border-radius: 15px;
+        box-shadow: 0px 15px 25px 5px hsla(245, 75%, 52%, 0.3);
+        cursor: pointer;
+
+        &:hover {
+            transition: background-color .3s ease-in-out;
+            background-color: hsla(245, 75%, 52%, 0.8);
+        }
+
+        &:active {
+            translate: 0px 5px;
+        }
+    }
+
+    .cancel {
+        margin: 1.5rem;
+        margin-bottom: 2rem;
+        font-weight: 600;
+        color: $DesaturatedBlue;
+        
+        &:hover {
+            transition: color .3s ease-in-out;
+            color: $DarkBlue;
+        }
+    }
+}
+
+//responsive 
+
+@media screen and (max-width: 750px) {
+
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+    }
+    
+}
