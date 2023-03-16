@@ -1,4 +1,4 @@
-@import '/style/var.scss';
+@import 'var.scss';
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
 //Reset CSS
@@ -25,7 +25,7 @@ body {
     font-family: 'Red Hat Display', sans-serif;
     max-width: 1440px;
     height: 100vh;
-    background-image: url(pattern-background-desktop.svg);
+    background-image: url(desktop.svg);
     background-repeat: repeat-x;
     background-size: 75%;
     background-color: $PaleBlue;
@@ -135,7 +135,7 @@ body {
 @media screen and (max-width: 750px) {
 
     body {
-        background-image: url(pattern-background-mobile.svg);
+        background-image: url(mobile.svg);
     }
     
 }

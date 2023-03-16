@@ -19,7 +19,7 @@ body {
   font-family: "Red Hat Display", sans-serif;
   max-width: 1440px;
   height: 100vh;
-  background-image: url(/images/pattern-background-desktop.svg);
+  background-image: url(desktop.svg);
   background-repeat: repeat-x;
   background-size: 75%;
   background-color: hsl(225, 100%, 94%);
@@ -117,6 +117,6 @@ body {
 
 @media screen and (max-width: 750px) {
   body {
-    background-image: url(images/pattern-background-mobile.svg);
+    background-image: url(mobile.svg);
   }
 }/*# sourceMappingURL=style.css.map */
