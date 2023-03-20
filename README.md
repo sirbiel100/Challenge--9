@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here](https://your-solution-url.com)
+- Solution URL: [Click here](https://www.frontendmentor.io/solutions/order-summary-component-scss-and-html-wOcZTQhMzd)
 
 - Live Site URL: [Click here](https://sirbiel100.github.io/Challenge--9/)
 
